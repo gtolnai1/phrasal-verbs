@@ -21,7 +21,7 @@ const questions = [
     { text: "He ___ up the story to avoid trouble.", answer: "made", type: "verb", explanation: "'Make up' means to invent." },
     { text: "We need to ___ up for lost time.", answer: "make", type: "verb", explanation: "'Make up for' means to compensate." },
     { text: "She ___ up with her boyfriend after the argument.", answer: "made", type: "verb", explanation: "'Make up with' means to reconcile." },
-    { text: "He ___ up the invitation to the party.", answer: "turned", type: "verb", explanation: "'Turn up' means to appear or arrive." },
+    { text: "He ___ up at the party.", answer: "turned", type: "verb", explanation: "'Turn up' means to appear or arrive." },
     { text: "The teacher told us to hand ___ our homework.", answer: "in", type: "prep", explanation: "'Hand in' means to submit." },
     { text: "He ___ up the volume to hear better.", answer: "turned", type: "verb", explanation: "'Turn up' means to increase (volume)." },
     { text: "She ___ up the offer of a new job.", answer: "took", type: "verb", explanation: "'Take up' means to accept (an offer)." },
@@ -34,7 +34,7 @@ const questions = [
     { text: "She ___ up the story to make it more interesting.", answer: "made", type: "verb", explanation: "'Make up' means to invent." },
     { text: "He ___ up the mess after dinner.", answer: "cleaned", type: "verb", explanation: "'Clean up' means to tidy." },
     { text: "She ___ up with a solution to the problem.", answer: "came", type: "verb", explanation: "'Come up with' means to think of." },
-    { text: "He ___ up the invitation to dinner.", answer: "turned", type: "verb", explanation: "'Turn up' means to appear or arrive." },
+    { text: "He ___ down the invitation to dinner.", answer: "turned", type: "verb", explanation: "'Turn down' means not to accept." },
     { text: "She ___ up the offer of help.", answer: "took", type: "verb", explanation: "'Take up' means to accept (an offer)." },
     { text: "He ___ up the challenge.", answer: "took", type: "verb", explanation: "'Take up' means to accept (a challenge)." },
     { text: "The plane ___ off at 8 o'clock.", answer: "took", type: "verb", explanation: "'Take off' means to leave the ground (plane)." },
@@ -45,7 +45,7 @@ const questions = [
     { text: "She ___ up the story for fun.", answer: "made", type: "verb", explanation: "'Make up' means to invent." },
     { text: "He ___ up the mess in the kitchen.", answer: "cleaned", type: "verb", explanation: "'Clean up' means to tidy." },
     { text: "She ___ up with a new plan.", answer: "came", type: "verb", explanation: "'Come up with' means to think of." },
-    { text: "He ___ up the invitation to the event.", answer: "turned", type: "verb", explanation: "'Turn up' means to appear or arrive." },
+    { text: "He ___ up after the invitation at the event.", answer: "turned", type: "verb", explanation: "'Turn up' means to appear or arrive." },
     { text: "She ___ up the offer of a ride.", answer: "took", type: "verb", explanation: "'Take up' means to accept (an offer)." },
     { text: "He ___ up the challenge bravely.", answer: "took", type: "verb", explanation: "'Take up' means to accept (a challenge)." },
     { text: "The plane ___ off smoothly.", answer: "took", type: "verb", explanation: "'Take off' means to leave the ground (plane)." },
@@ -224,4 +224,5 @@ function showResults() {
 
 // --- Start the app on load ---
 window.onload = startSession;
+
 
