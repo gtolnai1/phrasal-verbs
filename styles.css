@@ -1,0 +1,177 @@
+/* Light, modern, and responsive design */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+    min-height: 100vh;
+    color: #222;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 70vh;
+    justify-content: center;
+}
+
+.progress-container {
+    width: 350px;
+    max-width: 90vw;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+#progress-bar {
+    width: 0%;
+    height: 12px;
+    background: linear-gradient(90deg, #6dd5ed, #2193b0);
+    border-radius: 8px;
+    transition: width 0.4s;
+    box-shadow: 0 2px 8px rgba(33,147,176,0.15);
+}
+
+#progress-text {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    font-size: 1rem;
+    color: #2193b0;
+    font-weight: 600;
+}
+
+.task-box {
+    background: rgba(255,255,255,0.85);
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(33,147,176,0.10);
+    padding: 2rem 1.5rem;
+    width: 350px;
+    max-width: 95vw;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    min-height: 120px;
+    font-size: 1.15rem;
+}
+
+input[type="text"] {
+    padding: 0.5rem 0.8rem;
+    border: 1.5px solid #b2bec3;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    margin: 0 0.2rem;
+    width: 90px;
+    background: #f7fbff;
+    transition: border 0.2s;
+}
+
+input[type="text"]:focus {
+    border: 1.5px solid #2193b0;
+    outline: none;
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+button {
+    background: linear-gradient(90deg, #6dd5ed, #2193b0);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.6rem 1.3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(33,147,176,0.10);
+    transition: background 0.2s, transform 0.1s;
+}
+
+button:disabled {
+    background: #b2bec3;
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    background: linear-gradient(90deg, #2193b0, #6dd5ed);
+    transform: translateY(-2px) scale(1.03);
+}
+
+#feedback {
+    min-height: 32px;
+    text-align: center;
+    font-size: 1.08rem;
+    margin-bottom: 1rem;
+}
+
+#feedback.correct {
+    color: #27ae60;
+    font-weight: 600;
+}
+
+#feedback.incorrect {
+    color: #e17055;
+    font-weight: 600;
+}
+
+#feedback.solution {
+    color: #0984e3;
+    font-weight: 600;
+}
+
+#results {
+    background: rgba(255,255,255,0.97);
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(33,147,176,0.10);
+    padding: 2rem 1.5rem;
+    width: 370px;
+    max-width: 98vw;
+    text-align: left;
+    margin: 2rem auto 1rem auto;
+    font-size: 1.08rem;
+}
+
+#results h2 {
+    text-align: center;
+    color: #2193b0;
+    margin-bottom: 1rem;
+}
+
+#results ul {
+    padding-left: 1.2rem;
+}
+
+#results li {
+    margin-bottom: 0.7rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1.2rem 0 0.5rem 0;
+    color: #888;
+    font-size: 0.95rem;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .task-box, #results, .progress-container {
+        width: 98vw;
+        padding: 1.2rem 0.5rem;
+    }
+    main {
+        padding: 0 0.2rem;
+    }
+}
