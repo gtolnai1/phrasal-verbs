@@ -2,7 +2,7 @@
 const questions = [
     // Each question: { text: "...", answer: "...", type: "verb"|"prep", explanation: "..." }
     { text: "She couldn't ___ up with the noise any longer.", answer: "put", type: "verb", explanation: "The correct phrasal verb is 'put up with' (to tolerate)." },
-    { text: "He finally ___ down smoking after many years.", answer: "gave", type: "verb", explanation: "The correct phrasal verb is 'give up' (to quit)." },
+    { text: "He finally ___ up smoking after many years.", answer: "gave", type: "verb", explanation: "The correct phrasal verb is 'give up' (to quit)." },
     { text: "We ran ___ of milk, so I went to the shop.", answer: "out", type: "prep", explanation: "'Run out of' means to have no more left." },
     { text: "Can you look ___ my cat while I'm away?", answer: "after", type: "prep", explanation: "'Look after' means to take care of." },
     { text: "She made ___ an excuse for being late.", answer: "up", type: "prep", explanation: "'Make up' means to invent." },
@@ -224,3 +224,4 @@ function showResults() {
 
 // --- Start the app on load ---
 window.onload = startSession;
+
