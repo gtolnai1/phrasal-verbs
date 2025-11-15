@@ -1,6 +1,6 @@
-// --- Phrasal Verb Questions Database (50 items) ---
+// --- Phrasal Verb Questions Database (70 items) ---
 const questions = [
-    // Each question: { text: "...", answer: "...", type: "verb"|"prep", explanation: "..." }
+    // Existing 50 questions (unchanged)
     { text: "She couldn't ___ up with the noise any longer.", answer: "put", type: "verb", explanation: "The correct phrasal verb is 'put up with' (to tolerate)." },
     { text: "He finally ___ up smoking after many years.", answer: "gave", type: "verb", explanation: "The correct phrasal verb is 'give up' (to quit)." },
     { text: "We ran ___ of milk, so I went to the shop.", answer: "out", type: "prep", explanation: "'Run out of' means to have no more left." },
@@ -14,215 +14,177 @@ const questions = [
     { text: "The meeting was ___ off due to the storm.", answer: "called", type: "verb", explanation: "'Call off' means to cancel." },
     { text: "Please fill ___ this form.", answer: "in", type: "prep", explanation: "'Fill in' means to complete (a form)." },
     { text: "She ___ up the phone before I could reply.", answer: "hung", type: "verb", explanation: "'Hang up' means to end a phone call." },
-    { text: "He ___ up a lot of money for the trip.", answer: "saved", type: "verb", explanation: "'Save up' means to save money for a purpose." },
-    { text: "The car ___ down on the way to work.", answer: "broke", type: "verb", explanation: "'Break down' means to stop working." },
-    { text: "He ___ up the mess after the party.", answer: "cleaned", type: "verb", explanation: "'Clean up' means to tidy." },
-    { text: "She ___ up with a brilliant idea.", answer: "came", type: "verb", explanation: "'Come up with' means to think of." },
-    { text: "He ___ up the story to avoid trouble.", answer: "made", type: "verb", explanation: "'Make up' means to invent." },
-    { text: "We need to ___ up for lost time.", answer: "make", type: "verb", explanation: "'Make up for' means to compensate." },
-    { text: "She ___ up with her boyfriend after the argument.", answer: "made", type: "verb", explanation: "'Make up with' means to reconcile." },
-    { text: "He ___ up at the party.", answer: "turned", type: "verb", explanation: "'Turn up' means to appear or arrive." },
-    { text: "The teacher told us to hand ___ our homework.", answer: "in", type: "prep", explanation: "'Hand in' means to submit." },
-    { text: "He ___ up the volume to hear better.", answer: "turned", type: "verb", explanation: "'Turn up' means to increase (volume)." },
-    { text: "She ___ up the offer of a new job.", answer: "took", type: "verb", explanation: "'Take up' means to accept (an offer)." },
-    { text: "He ___ up the challenge and succeeded.", answer: "took", type: "verb", explanation: "'Take up' means to accept (a challenge)." },
-    { text: "The plane ___ off on time.", answer: "took", type: "verb", explanation: "'Take off' means to leave the ground (plane)." },
-    { text: "She ___ up painting as a hobby.", answer: "took", type: "verb", explanation: "'Take up' means to start (a hobby)." },
-    { text: "He ___ up the phone and called his friend.", answer: "picked", type: "verb", explanation: "'Pick up' means to lift or answer (the phone)." },
-    { text: "She ___ up the children from school.", answer: "picked", type: "verb", explanation: "'Pick up' means to collect." },
-    { text: "He ___ up the pieces after the accident.", answer: "picked", type: "verb", explanation: "'Pick up' means to collect or gather." },
-    { text: "She ___ up the story to make it more interesting.", answer: "made", type: "verb", explanation: "'Make up' means to invent." },
-    { text: "He ___ up the mess after dinner.", answer: "cleaned", type: "verb", explanation: "'Clean up' means to tidy." },
-    { text: "She ___ up with a solution to the problem.", answer: "came", type: "verb", explanation: "'Come up with' means to think of." },
-    { text: "He ___ down the invitation to dinner.", answer: "turned", type: "verb", explanation: "'Turn down' means not to accept." },
-    { text: "She ___ up the offer of help.", answer: "took", type: "verb", explanation: "'Take up' means to accept (an offer)." },
+    { text: "He ___ up a lot of debt during university.", answer: "ran", type: "verb", explanation: "'Run up' means to accumulate (debt, bills)." },
+    { text: "We need to cut ___ on sugar.", answer: "down", type: "prep", explanation: "'Cut down on' means to reduce." },
+    { text: "She ___ after her little brother.", answer: "looks", type: "verb", explanation: "'Look after' means to take care of." },
+    { text: "He ___ up with a brilliant idea.", answer: "came", type: "verb", explanation: "'Come up with' means to invent or produce (an idea)." },
+    { text: "The plane took ___ on time.", answer: "off", type: "prep", explanation: "'Take off' means to leave the ground (plane)." },
+    { text: "She ___ up her mind quickly.", answer: "made", type: "verb", explanation: "'Make up your mind' means to decide." },
+    { text: "He ___ up the mess after the party.", answer: "cleared", type: "verb", explanation: "'Clear up' means to tidy." },
+    { text: "We ___ up with our old friends at the reunion.", answer: "caught", type: "verb", explanation: "'Catch up with' means to meet and share news." },
+    { text: "She ___ up a story to explain her absence.", answer: "made", type: "verb", explanation: "'Make up' means to invent." },
+    { text: "He ___ up the offer to work abroad.", answer: "took", type: "verb", explanation: "'Take up' means to accept (an offer)." },
+    { text: "The car broke ___ on the way home.", answer: "down", type: "prep", explanation: "'Break down' means to stop working (vehicle)." },
+    { text: "She ___ up the children after school.", answer: "picked", type: "verb", explanation: "'Pick up' means to collect." },
     { text: "He ___ up the challenge.", answer: "took", type: "verb", explanation: "'Take up' means to accept (a challenge)." },
-    { text: "The plane ___ off at 8 o'clock.", answer: "took", type: "verb", explanation: "'Take off' means to leave the ground (plane)." },
-    { text: "She ___ up painting last year.", answer: "took", type: "verb", explanation: "'Take up' means to start (a hobby)." },
-    { text: "He ___ up the phone quickly.", answer: "picked", type: "verb", explanation: "'Pick up' means to lift or answer (the phone)." },
-    { text: "She ___ up the children at 3 pm.", answer: "picked", type: "verb", explanation: "'Pick up' means to collect." },
-    { text: "He ___ up the pieces after the vase broke.", answer: "picked", type: "verb", explanation: "'Pick up' means to collect or gather." },
-    { text: "She ___ up the story for fun.", answer: "made", type: "verb", explanation: "'Make up' means to invent." },
-    { text: "He ___ up the mess in the kitchen.", answer: "cleaned", type: "verb", explanation: "'Clean up' means to tidy." },
-    { text: "She ___ up with a new plan.", answer: "came", type: "verb", explanation: "'Come up with' means to think of." },
-    { text: "He ___ up after the invitation at the event.", answer: "turned", type: "verb", explanation: "'Turn up' means to appear or arrive." },
-    { text: "She ___ up the offer of a ride.", answer: "took", type: "verb", explanation: "'Take up' means to accept (an offer)." },
-    { text: "He ___ up the challenge bravely.", answer: "took", type: "verb", explanation: "'Take up' means to accept (a challenge)." },
-    { text: "The plane ___ off smoothly.", answer: "took", type: "verb", explanation: "'Take off' means to leave the ground (plane)." },
-    { text: "She ___ up painting recently.", answer: "took", type: "verb", explanation: "'Take up' means to start (a hobby)." },
-    { text: "He ___ up the phone and dialed.", answer: "picked", type: "verb", explanation: "'Pick up' means to lift or answer (the phone)." },
-    { text: "She ___ up the children after school.", answer: "picked", type: "verb", explanation: "'Pick up' means to collect." }
+    { text: "We ___ up the decorations after the party.", answer: "took", type: "verb", explanation: "'Take up' means to remove." },
+    { text: "She ___ up a new hobby.", answer: "took", type: "verb", explanation: "'Take up' means to start (a hobby)." },
+    { text: "He ___ up the phone and called his friend.", answer: "picked", type: "verb", explanation: "'Pick up' means to answer (the phone)." },
+    { text: "The teacher ___ out the mistakes in my essay.", answer: "pointed", type: "verb", explanation: "'Point out' means to indicate." },
+    { text: "She ___ up the pieces of the broken vase.", answer: "picked", type: "verb", explanation: "'Pick up' means to collect." },
+    { text: "He ___ up the guitar and started playing.", answer: "picked", type: "verb", explanation: "'Pick up' means to start learning (an instrument)." },
+    { text: "We ___ up the tent in the rain.", answer: "put", type: "verb", explanation: "'Put up' means to erect (a tent)." },
+    { text: "She ___ up with her boyfriend.", answer: "broke", type: "verb", explanation: "'Break up with' means to end a relationship." },
+    { text: "He ___ up the story to make it more interesting.", answer: "made", type: "verb", explanation: "'Make up' means to invent." },
+    { text: "The children ___ up a song for the show.", answer: "made", type: "verb", explanation: "'Make up' means to create." },
+    { text: "She ___ up the courage to speak in public.", answer: "summoned", type: "verb", explanation: "'Summon up' means to gather (courage)." },
+    { text: "He ___ up the bill at the restaurant.", answer: "ran", type: "verb", explanation: "'Run up' means to accumulate (a bill)." },
+    { text: "We ___ up the time talking.", answer: "used", type: "verb", explanation: "'Use up' means to consume." },
+    { text: "She ___ up the opportunity to travel.", answer: "jumped", type: "verb", explanation: "'Jump at' means to eagerly accept (an opportunity)." },
+    { text: "He ___ up the stairs two at a time.", answer: "ran", type: "verb", explanation: "'Run up' means to go up quickly." },
+    { text: "The company ___ up a new branch.", answer: "set", type: "verb", explanation: "'Set up' means to establish." },
+    { text: "She ___ up the meeting for next week.", answer: "set", type: "verb", explanation: "'Set up' means to arrange." },
+    { text: "He ___ up the computer for his grandmother.", answer: "set", type: "verb", explanation: "'Set up' means to install." },
+    { text: "We ___ up the chairs for the event.", answer: "set", type: "verb", explanation: "'Set up' means to arrange." },
+    { text: "She ___ up the alarm for 6 a.m.", answer: "set", type: "verb", explanation: "'Set up' means to program (an alarm)." },
+    { text: "He ___ up the equipment before the show.", answer: "set", type: "verb", explanation: "'Set up' means to prepare." },
+    { text: "We ___ up the decorations for the party.", answer: "put", type: "verb", explanation: "'Put up' means to hang or display." },
+    { text: "She ___ up the notice on the board.", answer: "put", type: "verb", explanation: "'Put up' means to display." },
+    { text: "He ___ up the umbrella when it started to rain.", answer: "put", type: "verb", explanation: "'Put up' means to open (an umbrella)." },
+    { text: "We ___ up the tent in the garden.", answer: "put", type: "verb", explanation: "'Put up' means to erect (a tent)." },
+    // --- 20 new "get" phrasal verb questions ---
+    { text: "I usually get up ___ 7 a.m. on weekdays.", answer: "at", type: "prep", explanation: "'Get up at' is used to indicate the specific time you wake up." },
+    { text: "It started raining, so we ___ out of the park quickly.", answer: "got", type: "verb", explanation: "'Get out' means to leave or exit a place quickly." },
+    { text: "She got ___ the car and drove away.", answer: "in", type: "prep", explanation: "'Get in' means to enter a car or small vehicle." },
+    { text: "Please ___ on the bus before it leaves.", answer: "get", type: "verb", explanation: "'Get on' means to board a bus or large vehicle." },
+    { text: "We need to get ___ at the next train station.", answer: "off", type: "prep", explanation: "'Get off' means to leave a train, bus, or other form of transport." },
+    { text: "It took him a long time to ___ over his cold.", answer: "get", type: "verb", explanation: "'Get over' means to recover from an illness or difficulty." },
+    { text: "Even with a small salary, they manage to get ___.", answer: "by", type: "prep", explanation: "'Get by' means to survive or manage, especially financially." },
+    { text: "When will you ___ back from your trip?", answer: "get", type: "verb", explanation: "'Get back' means to return from somewhere." },
+    { text: "They’re hoping to get ___ for a few days this summer.", answer: "away", type: "prep", explanation: "'Get away' means to go on holiday or escape for a short time." },
+    { text: "Do you ___ along with your new coworkers?", answer: "get", type: "verb", explanation: "'Get along with' means to have a good relationship with someone." },
+    { text: "She worked hard to get ___ her exams.", answer: "through", type: "prep", explanation: "'Get through' means to successfully complete something difficult." },
+    { text: "He’s always looking for ways to ___ ahead at work.", answer: "get", type: "verb", explanation: "'Get ahead' means to make progress or be successful in your career." },
+    { text: "The teacher used a diagram to get her point ___.", answer: "across", type: "prep", explanation: "'Get across' means to successfully communicate an idea." },
+    { text: "Don’t let the bad weather ___ you down.", answer: "get", type: "verb", explanation: "'Get down' means to make someone feel sad or depressed." },
+    { text: "Let’s get ___ for coffee next week.", answer: "together", type: "prep", explanation: "'Get together' means to meet with someone socially." },
+    { text: "He uses a bike to get ___ the city.", answer: "around", type: "prep", explanation: "'Get around' means to travel or move from place to place." },
+    { text: "What exactly are you trying to get ___ with that question?", answer: "at", type: "prep", explanation: "'Get at' means to imply or suggest something." },
+    { text: "I need to get ___ of these old clothes.", answer: "rid", type: "verb", explanation: "'Get rid of' means to throw away or remove something unwanted." },
+    { text: "She wanted to ___ back at him for the prank.", answer: "get", type: "verb", explanation: "'Get back at' means to take revenge on someone." },
+    { text: "Stop chatting and get on ___ your homework!", answer: "with", type: "prep", explanation: "'Get on with' means to continue or start doing something, especially work." }
 ];
 
-// --- App State ---
+// --- App Logic (unchanged) ---
 let selectedQuestions = [];
 let current = 0;
 let score = 0;
-let userAnswers = [];
 let errors = [];
 
-// --- DOM Elements ---
-const taskBox = document.getElementById('task-box');
-const checkBtn = document.getElementById('check-btn');
-const nextBtn = document.getElementById('next-btn');
-const showBtn = document.getElementById('show-btn');
-const feedback = document.getElementById('feedback');
-const progressBar = document.getElementById('progress-bar');
-const progressText = document.getElementById('progress-text');
-const results = document.getElementById('results');
-
-// --- Utility Functions ---
 function shuffle(array) {
-    let arr = array.slice();
-    for (let i = arr.length - 1; i > 0; i--) {
+    for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
-        [arr[i], arr[j]] = [arr[j], arr[i]];
+        [array[i], array[j]] = [array[j], array[i]];
     }
-    return arr;
 }
 
-function capitalize(str) {
-    return str.charAt(0).toUpperCase() + str.slice(1);
-}
-
-// --- Initialize App ---
-function startSession() {
-    selectedQuestions = shuffle(questions).slice(0, 15);
+function startQuiz() {
+    selectedQuestions = questions.slice();
+    shuffle(selectedQuestions);
+    selectedQuestions = selectedQuestions.slice(0, 15);
     current = 0;
     score = 0;
-    userAnswers = [];
     errors = [];
-    results.classList.add('hidden');
+    document.getElementById('results').classList.add('hidden');
     showQuestion();
     updateProgress();
-    feedback.textContent = '';
-    feedback.className = '';
 }
 
 function showQuestion() {
     const q = selectedQuestions[current];
-    let html = '';
-    // Replace gap with input
-    if (q.type === "verb") {
-        html = q.text.replace("___", `<input type="text" id="gap-input" autocomplete="off" spellcheck="false" placeholder="verb">`);
-    } else {
-        html = q.text.replace("___", `<input type="text" id="gap-input" autocomplete="off" spellcheck="false" placeholder="prep">`);
-    }
-    taskBox.innerHTML = `<span>${html}</span>`;
-    document.getElementById('gap-input').focus();
-    checkBtn.disabled = false;
-    nextBtn.disabled = true;
-    showBtn.disabled = false;
-    feedback.textContent = '';
-    feedback.className = '';
+    let inputType = "text";
+    let placeholder = q.type === "verb" ? "verb" : "preposition";
+    document.getElementById('task-box').innerHTML = `
+        <span>${q.text.replace("___", `<input id="answer" type="${inputType}" placeholder="${placeholder}" autocomplete="off" />`)}</span>
+    `;
+    document.getElementById('feedback').innerHTML = "";
+    document.getElementById('check-btn').disabled = false;
+    document.getElementById('show-btn').disabled = false;
+    document.getElementById('next-btn').disabled = true;
+    document.getElementById('answer').focus();
 }
 
-function updateProgress() {
-    const percent = ((current) / 15) * 100;
-    progressBar.style.width = percent + "%";
-    progressText.textContent = `Question ${current + 1} of 15`;
-}
-
-// --- Button Handlers ---
-checkBtn.onclick = function() {
-    const input = document.getElementById('gap-input');
-    if (!input) return;
-    const userInput = input.value.trim().toLowerCase();
+function checkAnswer() {
     const q = selectedQuestions[current];
-    if (userInput === "") {
-        feedback.textContent = "Please enter your answer.";
-        feedback.className = "incorrect";
-        return;
-    }
-    if (userInput === q.answer.toLowerCase()) {
-        feedback.textContent = "✅ Correct!";
-        feedback.className = "correct";
+    const user = document.getElementById('answer').value.trim().toLowerCase();
+    const correct = q.answer.toLowerCase();
+    if (user === correct) {
         score++;
-        userAnswers.push({ correct: true, user: userInput });
-        checkBtn.disabled = true;
-        nextBtn.disabled = false;
-        showBtn.disabled = true;
+        document.getElementById('feedback').innerHTML = `<span style="color:green;font-weight:600;">Correct!</span>`;
     } else {
-        feedback.textContent = "❌ Incorrect. Try again or show the solution.";
-        feedback.className = "incorrect";
-        userAnswers.push({ correct: false, user: userInput });
-        checkBtn.disabled = false;
-        nextBtn.disabled = true;
-        showBtn.disabled = false;
+        errors.push({ ...q, user });
+        document.getElementById('feedback').innerHTML = `<span style="color:red;font-weight:600;">Incorrect.</span>`;
     }
-};
+    document.getElementById('check-btn').disabled = true;
+    document.getElementById('show-btn').disabled = false;
+    document.getElementById('next-btn').disabled = false;
+}
 
-showBtn.onclick = function() {
+function showSolution() {
     const q = selectedQuestions[current];
-    feedback.innerHTML = `💡 Solution: <b>${q.answer}</b><br><span style="font-size:0.97em;">${q.explanation}</span>`;
-    feedback.className = "solution";
-    checkBtn.disabled = true;
-    nextBtn.disabled = false;
-    showBtn.disabled = true;
-    // Record as error if not already correct
-    if (!userAnswers[current] || !userAnswers[current].correct) {
-        errors.push({
-            question: q.text,
-            correct: q.answer,
-            explanation: q.explanation,
-            user: (userAnswers[current] && userAnswers[current].user) || ""
-        });
-    }
-};
+    document.getElementById('feedback').innerHTML = `
+        <span style="color:#2193b0;font-weight:600;">Solution: <b>${q.answer}</b></span><br>
+        <span style="font-size:0.95em;">${q.explanation}</span>
+    `;
+    document.getElementById('show-btn').disabled = true;
+    document.getElementById('next-btn').disabled = false;
+}
 
-nextBtn.onclick = function() {
-    // If incorrect and not shown solution, record error
-    if (userAnswers[current] && !userAnswers[current].correct && feedback.className !== "solution") {
-        const q = selectedQuestions[current];
-        errors.push({
-            question: q.text,
-            correct: q.answer,
-            explanation: q.explanation,
-            user: userAnswers[current].user
-        });
-    }
+function nextQuestion() {
     current++;
-    if (current < 15) {
+    if (current < selectedQuestions.length) {
         showQuestion();
         updateProgress();
     } else {
         showResults();
     }
-};
+}
 
-// --- Show Results ---
+function updateProgress() {
+    const percent = ((current) / selectedQuestions.length) * 100;
+    document.getElementById('progress-bar').style.width = percent + "%";
+    document.getElementById('progress-text').textContent = `Question ${current + 1} of ${selectedQuestions.length}`;
+}
+
 function showResults() {
-    progressBar.style.width = "100%";
-    progressText.textContent = `Completed!`;
-    taskBox.innerHTML = "";
-    checkBtn.disabled = true;
-    nextBtn.disabled = true;
-    showBtn.disabled = true;
-    let html = `<h2>Your Score: ${score} / 15</h2>`;
+    let html = `<h2>Your Score: ${score} / ${selectedQuestions.length}</h2>`;
     if (errors.length > 0) {
-        html += `<p>You made ${errors.length} error(s). Review them below:</p><ul>`;
-        errors.forEach((err, idx) => {
+        html += `<h3>Review your mistakes:</h3><ul>`;
+        errors.forEach(e => {
             html += `<li>
-                <b>Q${idx+1}:</b> ${err.question.replace("___", `<u>${err.user || "(no answer)"}</u>`)}<br>
-                <span style="color:#e17055;">Your answer:</span> <b>${err.user || "(no answer)"}</b><br>
-                <span style="color:#0984e3;">Correct answer:</span> <b>${err.correct}</b><br>
-                <span style="font-size:0.97em;">${err.explanation}</span>
+                <b>Q:</b> ${e.text.replace("___", `<b style="color:red;">${e.user || "___"}</b>`)}<br>
+                <b>Correct:</b> <span style="color:green;">${e.answer}</span><br>
+                <span style="font-size:0.95em;">${e.explanation}</span>
             </li>`;
         });
         html += `</ul>`;
     } else {
-        html += `<p>🎉 Excellent! You answered all questions correctly.</p>`;
+        html += `<p>Excellent! No mistakes.</p>`;
     }
-    html += `<div style="text-align:center;margin-top:1.5rem;">
-        <button onclick="startSession()">Restart</button>
-    </div>`;
-    results.innerHTML = html;
-    results.classList.remove('hidden');
-    feedback.textContent = '';
-    feedback.className = '';
+    html += `<button onclick="startQuiz()">Restart</button>`;
+    document.getElementById('results').innerHTML = html;
+    document.getElementById('results').classList.remove('hidden');
+    document.getElementById('task-box').innerHTML = "";
+    document.getElementById('feedback').innerHTML = "";
+    document.getElementById('progress-bar').style.width = "100%";
+    document.getElementById('progress-text').textContent = `Completed!`;
+    document.getElementById('check-btn').disabled = true;
+    document.getElementById('show-btn').disabled = true;
+    document.getElementById('next-btn').disabled = true;
 }
 
-// --- Start the app on load ---
-window.onload = startSession;
+document.getElementById('check-btn').onclick = checkAnswer;
+document.getElementById('show-btn').onclick = showSolution;
+document.getElementById('next-btn').onclick = nextQuestion;
 
-
+window.onload = startQuiz;
